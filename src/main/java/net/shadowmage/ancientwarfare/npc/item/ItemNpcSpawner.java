@@ -18,8 +18,8 @@ import net.shadowmage.ancientwarfare.core.util.BlockPosition;
 import net.shadowmage.ancientwarfare.core.util.BlockTools;
 import net.shadowmage.ancientwarfare.npc.entity.AWNPCEntityLoader;
 import net.shadowmage.ancientwarfare.npc.entity.NpcBase;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ItemNpcSpawner extends Item implements IItemClickable
 {

@@ -16,8 +16,8 @@ import net.shadowmage.ancientwarfare.structure.gui.GuiStructureSelection;
 import net.shadowmage.ancientwarfare.structure.render.RenderGateHelper;
 import net.shadowmage.ancientwarfare.structure.render.RenderStructureBuilder;
 import net.shadowmage.ancientwarfare.structure.tile.TileStructureBuilder;
-import cpw.mods.fml.client.registry.ClientRegistry;
-import cpw.mods.fml.client.registry.RenderingRegistry;
+import net.minecraftforge.fml.client.registry.ClientRegistry;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
 
 public class ClientProxyStructures extends ClientProxyBase
 {

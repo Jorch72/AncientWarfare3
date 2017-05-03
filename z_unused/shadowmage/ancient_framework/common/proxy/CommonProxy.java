@@ -30,8 +30,8 @@ import net.minecraft.network.packet.Packet250CustomPayload;
 import net.minecraft.world.WorldServer;
 import shadowmage.ancient_framework.common.network.Packet00MultiPart;
 import shadowmage.ancient_framework.common.network.PacketBase;
-import cpw.mods.fml.common.network.PacketDispatcher;
-import cpw.mods.fml.common.network.Player;
+import net.minecraftforge.fml.common.network.PacketDispatcher;
+import net.minecraftforge.fml.common.network.Player;
 
 public class CommonProxy
 {

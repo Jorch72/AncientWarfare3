@@ -1,8 +1,8 @@
 package net.shadowmage.ancientwarfare.core.network;
 
 import net.minecraft.network.NetHandlerPlayServer;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import cpw.mods.fml.common.network.FMLNetworkEvent.ServerCustomPacketEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.network.FMLNetworkEvent.ServerCustomPacketEvent;
 
 public class PacketHandlerServer
 {

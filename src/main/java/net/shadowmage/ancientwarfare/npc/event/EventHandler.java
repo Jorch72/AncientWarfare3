@@ -9,7 +9,7 @@ import net.minecraft.entity.monster.EntitySkeleton;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.shadowmage.ancientwarfare.npc.AncientWarfareNPC;
 import net.shadowmage.ancientwarfare.npc.entity.NpcBase;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class EventHandler
 {

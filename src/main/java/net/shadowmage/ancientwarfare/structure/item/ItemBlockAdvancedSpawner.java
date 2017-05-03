@@ -18,8 +18,8 @@ import net.shadowmage.ancientwarfare.structure.tile.SpawnerSettings;
 import net.shadowmage.ancientwarfare.structure.tile.SpawnerSettings.EntitySpawnGroup;
 import net.shadowmage.ancientwarfare.structure.tile.SpawnerSettings.EntitySpawnSettings;
 import net.shadowmage.ancientwarfare.structure.tile.TileAdvancedSpawner;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ItemBlockAdvancedSpawner extends ItemBlock implements IItemKeyInterface
 {

@@ -35,7 +35,7 @@ import net.shadowmage.ancientwarfare.core.upgrade.WorksiteUpgrade;
 import net.shadowmage.ancientwarfare.core.util.BlockPosition;
 import net.shadowmage.ancientwarfare.core.util.InventoryTools;
 import cofh.api.energy.IEnergyHandler;
-import cpw.mods.fml.common.Optional;
+import net.minecraftforge.fml.common.Optional;
 
 @Optional.InterfaceList(value=
   {

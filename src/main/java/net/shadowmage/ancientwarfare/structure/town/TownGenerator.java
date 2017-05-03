@@ -17,7 +17,7 @@ import net.shadowmage.ancientwarfare.structure.template.build.StructureBB;
 import net.shadowmage.ancientwarfare.structure.town.TownTemplate.TownStructureEntry;
 import net.shadowmage.ancientwarfare.structure.world_gen.WorldGenTickHandler;
 import net.shadowmage.ancientwarfare.structure.world_gen.WorldGenTickHandler.StructureGenerationCallbackTicket;
-import cpw.mods.fml.common.registry.VillagerRegistry;
+import net.minecraftforge.fml.common.registry.VillagerRegistry;
 
 /**
  * Responsible for constructing the town -- leveling the area, placing the structures, constructing walls

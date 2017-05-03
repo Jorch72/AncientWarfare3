@@ -26,7 +26,7 @@ import java.util.ArrayList;
 import java.util.Properties;
 
 import shadowmage.ancient_framework.AWFramework;
-import cpw.mods.fml.common.registry.LanguageRegistry;
+import net.minecraftforge.fml.common.registry.LanguageRegistry;
 
 public class LanguageLoader
 {

@@ -2,8 +2,8 @@ package shadowmage.meim.common.network;
 
 import net.minecraft.network.INetworkManager;
 import net.minecraft.network.packet.Packet250CustomPayload;
-import cpw.mods.fml.common.network.IPacketHandler;
-import cpw.mods.fml.common.network.Player;
+import net.minecraftforge.fml.common.network.IPacketHandler;
+import net.minecraftforge.fml.common.network.Player;
 
 public class NetworkManager  implements IPacketHandler
 {

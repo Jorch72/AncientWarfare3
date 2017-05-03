@@ -60,9 +60,9 @@ import net.shadowmage.ancientwarfare.core.config.ConfigManager;
 import net.shadowmage.ancientwarfare.core.network.NetworkHandler;
 import net.shadowmage.ancientwarfare.core.proxy.ClientProxyBase;
 import net.shadowmage.ancientwarfare.core.render.TileCraftingTableRender;
-import cpw.mods.fml.client.config.DummyConfigElement.DummyCategoryElement;
-import cpw.mods.fml.client.config.IConfigElement;
-import cpw.mods.fml.client.registry.ClientRegistry;
+import net.minecraftforge.fml.client.config.DummyConfigElement.DummyCategoryElement;
+import net.minecraftforge.fml.client.config.IConfigElement;
+import net.minecraftforge.fml.client.registry.ClientRegistry;
 
 public class ClientProxyAutomation extends ClientProxyBase
 {

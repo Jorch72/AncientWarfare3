@@ -19,7 +19,7 @@ import net.shadowmage.ancientwarfare.core.interfaces.ITorque.TorqueCell;
 import net.shadowmage.ancientwarfare.core.network.NetworkHandler;
 import net.shadowmage.ancientwarfare.core.network.PacketBlockEvent;
 import cofh.api.energy.IEnergyHandler;
-import cpw.mods.fml.common.Optional;
+import net.minecraftforge.fml.common.Optional;
 
 @Optional.InterfaceList(value=
   {

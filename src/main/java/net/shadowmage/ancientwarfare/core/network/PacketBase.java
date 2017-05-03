@@ -6,7 +6,7 @@ import io.netty.buffer.Unpooled;
 import java.util.HashMap;
 
 import net.minecraft.entity.player.EntityPlayer;
-import cpw.mods.fml.common.network.internal.FMLProxyPacket;
+import net.minecraftforge.fml.common.network.internal.FMLProxyPacket;
 
 public abstract class PacketBase
 {

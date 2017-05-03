@@ -34,8 +34,8 @@ import shadowmage.ancient_framework.common.utils.NBTTools;
 import com.google.common.io.ByteArrayDataInput;
 import com.google.common.io.ByteStreams;
 
-import cpw.mods.fml.common.network.IPacketHandler;
-import cpw.mods.fml.common.network.Player;
+import net.minecraftforge.fml.common.network.IPacketHandler;
+import net.minecraftforge.fml.common.network.Player;
 
 public class PacketHandler implements IPacketHandler
 {

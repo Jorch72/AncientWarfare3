@@ -18,8 +18,8 @@ import net.shadowmage.ancientwarfare.automation.tile.warehouse2.TileWarehouseSto
 import net.shadowmage.ancientwarfare.automation.tile.warehouse2.TileWarehouseStorageMedium;
 import net.shadowmage.ancientwarfare.core.block.BlockIconMap;
 import net.shadowmage.ancientwarfare.core.interfaces.IInteractableTile;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraftforge.relauncher.Side;
+import net.minecraftforge.relauncher.SideOnly;
 
 public class BlockWarehouseStorage extends Block
 {

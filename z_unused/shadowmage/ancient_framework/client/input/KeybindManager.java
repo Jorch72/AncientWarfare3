@@ -33,8 +33,8 @@ import org.lwjgl.input.Mouse;
 
 import shadowmage.ancient_framework.common.config.Statics;
 import shadowmage.ancient_framework.common.network.GUIHandler;
-import cpw.mods.fml.client.registry.KeyBindingRegistry.KeyHandler;
-import cpw.mods.fml.common.TickType;
+import net.minecraftforge.fml.client.registry.KeyBindingRegistry.KeyHandler;
+import net.minecraftforge.fml.common.TickType;
 
 public class KeybindManager extends KeyHandler
 {

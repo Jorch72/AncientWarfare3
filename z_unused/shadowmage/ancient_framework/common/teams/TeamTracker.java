@@ -29,7 +29,7 @@ import shadowmage.ancient_framework.common.container.ContainerBase;
 import shadowmage.ancient_framework.common.container.ContainerTeamControl;
 import shadowmage.ancient_framework.common.gamedata.AWGameData;
 import shadowmage.ancient_framework.common.network.Packet05Team;
-import cpw.mods.fml.common.IPlayerTracker;
+import net.minecraftforge.fml.common.IPlayerTracker;
 
 public class TeamTracker implements IPlayerTracker
 {

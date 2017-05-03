@@ -38,7 +38,7 @@ import net.shadowmage.ancientwarfare.structure.item.ItemStructureSettings;
 import net.shadowmage.ancientwarfare.structure.template.StructureTemplateClient;
 import net.shadowmage.ancientwarfare.structure.template.StructureTemplateManagerClient;
 import net.shadowmage.ancientwarfare.structure.template.build.StructureBB;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class StructureBoundingBoxRenderer
 {

@@ -37,17 +37,17 @@ import net.shadowmage.ancientwarfare.core.config.AWLog;
 import net.shadowmage.ancientwarfare.core.gamedata.AWGameData;
 import net.shadowmage.ancientwarfare.core.network.NetworkHandler;
 import net.shadowmage.ancientwarfare.core.proxy.CommonProxyBase;
-import cpw.mods.fml.client.event.ConfigChangedEvent.OnConfigChangedEvent;
-import cpw.mods.fml.common.FMLCommonHandler;
-import cpw.mods.fml.common.Loader;
-import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.Mod.EventHandler;
-import cpw.mods.fml.common.Mod.Instance;
-import cpw.mods.fml.common.SidedProxy;
-import cpw.mods.fml.common.event.FMLInitializationEvent;
-import cpw.mods.fml.common.event.FMLPostInitializationEvent;
-import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.client.event.ConfigChangedEvent.OnConfigChangedEvent;
+import net.minecraftforge.common.FMLCommonHandler;
+import net.minecraftforge.common.Loader;
+import net.minecraftforge.common.Mod;
+import net.minecraftforge.common.Mod.EventHandler;
+import net.minecraftforge.common.Mod.Instance;
+import net.minecraftforge.common.SidedProxy;
+import net.minecraftforge.common.event.FMLInitializationEvent;
+import net.minecraftforge.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.common.eventhandler.SubscribeEvent;
 
 @Mod
 (

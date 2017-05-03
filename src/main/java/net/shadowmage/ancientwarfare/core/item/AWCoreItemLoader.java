@@ -2,7 +2,7 @@ package net.shadowmage.ancientwarfare.core.item;
 
 import net.minecraft.item.Item.ToolMaterial;
 import net.shadowmage.ancientwarfare.core.api.AWItems;
-import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class AWCoreItemLoader
 {

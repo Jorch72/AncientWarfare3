@@ -25,8 +25,8 @@ import net.shadowmage.ancientwarfare.core.upgrade.WorksiteUpgrade;
 import net.shadowmage.ancientwarfare.core.util.BlockPosition;
 import net.shadowmage.ancientwarfare.structure.template.build.StructureBB;
 import net.shadowmage.ancientwarfare.structure.template.build.StructureBuilderTicked;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class TileStructureBuilder extends TileEntity implements IWorkSite, ITorqueTile
 {

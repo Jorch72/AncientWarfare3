@@ -37,8 +37,8 @@ import net.shadowmage.ancientwarfare.npc.item.ItemShield;
 import net.shadowmage.ancientwarfare.npc.npc_command.NpcCommand.Command;
 import net.shadowmage.ancientwarfare.npc.skin.NpcSkinManager;
 import net.shadowmage.ancientwarfare.npc.tile.TileTownHall;
-import cpw.mods.fml.common.network.ByteBufUtils;
-import cpw.mods.fml.common.registry.IEntityAdditionalSpawnData;
+import net.minecraftforge.fml.common.network.ByteBufUtils;
+import net.minecraftforge.fml.common.registry.IEntityAdditionalSpawnData;
 
 public abstract class NpcBase extends EntityCreature implements IEntityAdditionalSpawnData, IOwnable, IEntityPacketHandler
 {

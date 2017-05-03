@@ -26,7 +26,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import shadowmage.ancient_framework.common.network.PacketBase;
 import shadowmage.ancient_framework.common.proxy.CommonProxy;
-import cpw.mods.fml.common.network.PacketDispatcher;
+import net.minecraftforge.fml.common.network.PacketDispatcher;
 
 public abstract class ClientProxyBase extends CommonProxy
 {

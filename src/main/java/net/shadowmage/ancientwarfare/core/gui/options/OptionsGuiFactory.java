@@ -6,8 +6,8 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiScreen;
 import net.shadowmage.ancientwarfare.core.AncientWarfareCore;
 import net.shadowmage.ancientwarfare.core.config.ConfigManager;
-import cpw.mods.fml.client.IModGuiFactory;
-import cpw.mods.fml.client.config.GuiConfig;
+import net.minecraftforge.fml.client.IModGuiFactory;
+import net.minecraftforge.fml.client.config.GuiConfig;
 
 public class OptionsGuiFactory implements IModGuiFactory
 {

@@ -11,8 +11,8 @@ import net.shadowmage.ancientwarfare.core.block.BlockIconMap;
 import net.shadowmage.ancientwarfare.core.network.NetworkHandler;
 import net.shadowmage.ancientwarfare.structure.item.AWStructuresItemLoader;
 import net.shadowmage.ancientwarfare.structure.tile.TileDraftingStation;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockDraftingStation extends Block
 {

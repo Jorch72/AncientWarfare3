@@ -30,8 +30,8 @@ import shadowmage.ancient_framework.AWFramework;
 import shadowmage.ancient_framework.client.gui.GuiContainerAdvanced;
 import shadowmage.ancient_framework.common.config.AWLog;
 import shadowmage.ancient_framework.common.container.ContainerBase;
-import cpw.mods.fml.common.network.FMLNetworkHandler;
-import cpw.mods.fml.common.network.IGuiHandler;
+import net.minecraftforge.fml.common.network.FMLNetworkHandler;
+import net.minecraftforge.fml.common.network.IGuiHandler;
 
 public class GUIHandler implements IGuiHandler
 {

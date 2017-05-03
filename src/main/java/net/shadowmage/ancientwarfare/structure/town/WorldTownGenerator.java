@@ -12,7 +12,7 @@ import net.shadowmage.ancientwarfare.structure.gamedata.TownMap;
 import net.shadowmage.ancientwarfare.structure.template.build.StructureBB;
 import net.shadowmage.ancientwarfare.structure.world_gen.StructureEntry;
 import net.shadowmage.ancientwarfare.structure.world_gen.WorldGenTickHandler;
-import cpw.mods.fml.common.IWorldGenerator;
+import net.minecraftforge.fml.common.IWorldGenerator;
 
 public class WorldTownGenerator implements IWorldGenerator
 {

@@ -17,8 +17,8 @@ import net.shadowmage.ancientwarfare.core.util.BlockTools;
 
 import org.lwjgl.input.Keyboard;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ItemConstructionTool extends Item implements IItemClickable, IItemKeyInterface
 {

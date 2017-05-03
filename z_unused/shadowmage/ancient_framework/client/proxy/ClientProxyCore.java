@@ -27,9 +27,9 @@ import shadowmage.ancient_framework.client.input.TickHandlerClientKeyboard;
 import shadowmage.ancient_framework.common.config.AWLog;
 import shadowmage.ancient_framework.common.config.Statics;
 import shadowmage.ancient_framework.common.network.GUIHandler;
-import cpw.mods.fml.client.registry.KeyBindingRegistry;
-import cpw.mods.fml.common.registry.TickRegistry;
-import cpw.mods.fml.relauncher.Side;
+import net.minecraftforge.fml.client.registry.KeyBindingRegistry;
+import net.minecraftforge.fml.common.registry.TickRegistry;
+import net.minecraftforge.fml.relauncher.Side;
 
 public class ClientProxyCore extends ClientProxyBase
 {

@@ -3,7 +3,7 @@ package net.shadowmage.ancientwarfare.core.config;
 import java.util.ArrayList;
 import java.util.List;
 
-import cpw.mods.fml.client.config.IConfigElement;
+import net.minecraftforge.fml.client.config.IConfigElement;
 
 public class ConfigManager
 {

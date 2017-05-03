@@ -20,8 +20,8 @@ import net.shadowmage.ancientwarfare.core.block.BlockRotationHandler.IRotatableB
 import net.shadowmage.ancientwarfare.core.block.BlockRotationHandler.RelativeSide;
 import net.shadowmage.ancientwarfare.core.block.BlockRotationHandler.RotationType;
 import net.shadowmage.ancientwarfare.core.interfaces.IInteractableTile;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraftforge.relauncher.Side;
+import net.minecraftforge.relauncher.SideOnly;
 
 public class BlockWarehouseStockViewer extends Block implements IRotatableBlock
 {

@@ -7,7 +7,7 @@ import net.shadowmage.ancientwarfare.structure.tile.TEGateProxy;
 import net.shadowmage.ancientwarfare.structure.tile.TileAdvancedSpawner;
 import net.shadowmage.ancientwarfare.structure.tile.TileDraftingStation;
 import net.shadowmage.ancientwarfare.structure.tile.TileStructureBuilder;
-import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class AWStructuresBlockLoader
 {

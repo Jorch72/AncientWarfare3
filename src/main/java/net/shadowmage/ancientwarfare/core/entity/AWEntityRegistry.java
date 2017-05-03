@@ -134,7 +134,7 @@ public static void registerEntity(EntityDeclaration reg)
   {
   entityRegistrations.put(reg.entityName, reg);
   classToRegistration.put(reg.entityClass, reg.entityName);
-  cpw.mods.fml.common.registry.EntityRegistry.registerModEntity(reg.entityClass, reg.entityName, reg.id, reg.mod, reg.trackingRange, reg.updateFrequency, reg.sendsVelocityUpdates);
+  net.minecraftforge.fml.common.registry.EntityRegistry.registerModEntity(reg.entityClass, reg.entityName, reg.id, reg.mod, reg.trackingRange, reg.updateFrequency, reg.sendsVelocityUpdates);
   }
 
 public static String getRegistryNameFor(@SuppressWarnings("rawtypes") Class clz)

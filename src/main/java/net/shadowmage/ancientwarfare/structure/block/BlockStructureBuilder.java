@@ -10,8 +10,8 @@ import net.minecraft.world.World;
 import net.shadowmage.ancientwarfare.core.block.BlockIconMap;
 import net.shadowmage.ancientwarfare.structure.item.AWStructuresItemLoader;
 import net.shadowmage.ancientwarfare.structure.tile.TileStructureBuilder;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockStructureBuilder extends Block
 {

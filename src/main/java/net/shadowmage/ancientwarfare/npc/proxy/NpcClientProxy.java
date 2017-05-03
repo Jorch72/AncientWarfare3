@@ -38,10 +38,10 @@ import net.shadowmage.ancientwarfare.npc.render.RenderNpcBase;
 import net.shadowmage.ancientwarfare.npc.render.RenderShield;
 import net.shadowmage.ancientwarfare.npc.render.RenderWorkLines;
 import net.shadowmage.ancientwarfare.npc.skin.NpcSkinManager;
-import cpw.mods.fml.client.config.DummyConfigElement.DummyCategoryElement;
-import cpw.mods.fml.client.config.IConfigElement;
-import cpw.mods.fml.client.registry.RenderingRegistry;
-import cpw.mods.fml.common.FMLCommonHandler;
+import net.minecraftforge.fml.client.config.DummyConfigElement.DummyCategoryElement;
+import net.minecraftforge.fml.client.config.IConfigElement;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
+import net.minecraftforge.fml.common.FMLCommonHandler;
 
 public class NpcClientProxy extends NpcCommonProxy
 {

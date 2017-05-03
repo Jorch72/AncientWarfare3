@@ -23,7 +23,7 @@ import net.shadowmage.ancientwarfare.npc.orders.WorkOrder.WorkEntry;
 
 import org.lwjgl.opengl.GL11;
 
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class RenderWorkLines
 {

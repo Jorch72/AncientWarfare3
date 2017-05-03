@@ -13,8 +13,8 @@ import net.shadowmage.ancientwarfare.core.block.BlockRotationHandler.RotationTyp
 import net.shadowmage.ancientwarfare.core.interfaces.IInteractableTile;
 import net.shadowmage.ancientwarfare.core.tile.TileResearchStation;
 import net.shadowmage.ancientwarfare.core.util.InventoryTools;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockResearchStation extends Block implements IRotatableBlock
 {

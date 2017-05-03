@@ -40,7 +40,7 @@ import net.shadowmage.ancientwarfare.structure.template.StructureTemplate;
 import net.shadowmage.ancientwarfare.structure.template.WorldGenStructureManager;
 import net.shadowmage.ancientwarfare.structure.template.build.StructureBB;
 import net.shadowmage.ancientwarfare.structure.template.build.StructureBuilderWorldGen;
-import cpw.mods.fml.common.IWorldGenerator;
+import net.minecraftforge.fml.common.IWorldGenerator;
 
 public class WorldStructureGenerator implements IWorldGenerator
 {

@@ -32,9 +32,9 @@ import net.minecraft.item.ItemStack;
 import net.shadowmage.ancientwarfare.core.api.AWItems;
 import net.shadowmage.ancientwarfare.core.item.ItemComponent;
 import net.shadowmage.ancientwarfare.core.upgrade.WorksiteUpgrade;
-import cpw.mods.fml.common.registry.GameRegistry;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraftforge.common.registry.GameRegistry;
+import net.minecraftforge.relauncher.Side;
+import net.minecraftforge.relauncher.SideOnly;
 public class AWAutomationItemLoader
 {
 

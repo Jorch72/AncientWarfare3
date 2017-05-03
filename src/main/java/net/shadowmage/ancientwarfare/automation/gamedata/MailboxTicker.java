@@ -2,9 +2,9 @@ package net.shadowmage.ancientwarfare.automation.gamedata;
 
 import net.minecraft.server.MinecraftServer;
 import net.shadowmage.ancientwarfare.core.gamedata.AWGameData;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import cpw.mods.fml.common.gameevent.TickEvent.Phase;
-import cpw.mods.fml.common.gameevent.TickEvent.ServerTickEvent;
+import net.minecraftforge.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.common.gameevent.TickEvent.Phase;
+import net.minecraftforge.common.gameevent.TickEvent.ServerTickEvent;
 
 public class MailboxTicker
 {

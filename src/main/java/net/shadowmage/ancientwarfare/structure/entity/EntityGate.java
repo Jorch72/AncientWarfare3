@@ -37,7 +37,7 @@ import net.shadowmage.ancientwarfare.core.network.PacketEntity;
 import net.shadowmage.ancientwarfare.core.util.BlockPosition;
 import net.shadowmage.ancientwarfare.core.util.BlockTools;
 import net.shadowmage.ancientwarfare.structure.gates.types.Gate;
-import cpw.mods.fml.common.registry.IEntityAdditionalSpawnData;
+import net.minecraftforge.fml.common.registry.IEntityAdditionalSpawnData;
 
 /**
  * an class to represent ALL gate types

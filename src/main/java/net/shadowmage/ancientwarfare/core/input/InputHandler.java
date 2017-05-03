@@ -22,9 +22,9 @@ import net.shadowmage.ancientwarfare.core.network.PacketItemInteraction;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
 
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import cpw.mods.fml.common.gameevent.InputEvent.KeyInputEvent;
-import cpw.mods.fml.common.gameevent.InputEvent.MouseInputEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.InputEvent.KeyInputEvent;
+import net.minecraftforge.fml.common.gameevent.InputEvent.MouseInputEvent;
 
 public class InputHandler
 {

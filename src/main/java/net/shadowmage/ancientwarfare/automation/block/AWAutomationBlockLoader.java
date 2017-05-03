@@ -46,7 +46,7 @@ import net.shadowmage.ancientwarfare.core.block.BlockRotationHandler.RelativeSid
 import net.shadowmage.ancientwarfare.core.item.ItemBlockMeta;
 import net.shadowmage.ancientwarfare.core.item.ItemBlockOwnedRotatable;
 import net.shadowmage.ancientwarfare.core.item.ItemBlockRotatableMetaTile;
-import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraftforge.common.registry.GameRegistry;
 
 public class AWAutomationBlockLoader
 {

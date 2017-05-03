@@ -32,7 +32,7 @@ import net.minecraftforge.event.terraingen.BiomeEvent.GetVillageBlockMeta;
 import net.shadowmage.ancientwarfare.core.util.BlockPosition;
 import net.shadowmage.ancientwarfare.structure.template.StructureTemplate;
 import net.shadowmage.ancientwarfare.structure.template.build.validation.StructureValidationType;
-import cpw.mods.fml.common.eventhandler.Event.Result;
+import net.minecraftforge.fml.common.eventhandler.Event.Result;
 
 public class StructureBuilderWorldGen extends StructureBuilder
 {

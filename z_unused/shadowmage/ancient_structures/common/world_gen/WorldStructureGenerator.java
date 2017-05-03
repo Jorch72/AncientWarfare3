@@ -39,7 +39,7 @@ import shadowmage.ancient_structures.common.manager.WorldGenStructureManager;
 import shadowmage.ancient_structures.common.template.StructureTemplate;
 import shadowmage.ancient_structures.common.template.build.StructureBB;
 import shadowmage.ancient_structures.common.template.build.validation.StructureBuilderWorldGen;
-import cpw.mods.fml.common.IWorldGenerator;
+import net.minecraftforge.fml.common.IWorldGenerator;
 
 public class WorldStructureGenerator implements IWorldGenerator
 {

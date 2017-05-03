@@ -18,8 +18,8 @@ import net.shadowmage.ancientwarfare.core.block.BlockRotationHandler.RotationTyp
 import net.shadowmage.ancientwarfare.core.block.IconRotationMap;
 import net.shadowmage.ancientwarfare.core.network.NetworkHandler;
 import net.shadowmage.ancientwarfare.core.util.InventoryTools;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraftforge.relauncher.Side;
+import net.minecraftforge.relauncher.SideOnly;
 
 public class BlockMailbox extends Block implements IRotatableBlock
 {

@@ -10,8 +10,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.shadowmage.ancientwarfare.core.interfaces.IItemClickable;
 import net.shadowmage.ancientwarfare.modeler.AncientWarfareModeler;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ItemModelEditor extends Item implements IItemClickable
 {
