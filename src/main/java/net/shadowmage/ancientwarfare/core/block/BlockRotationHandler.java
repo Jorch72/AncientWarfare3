@@ -18,20 +18,24 @@ import net.shadowmage.ancientwarfare.core.util.InventoryTools;
 
 public class BlockRotationHandler
 {
-
+/*
 public static int getRotatedMeta(IRotatableBlock block, int meta, ForgeDirection axis)
   {
+    return 0;
+    /*
   RotationType t = block.getRotationType();
   if(t==RotationType.NONE){return meta;}
   ForgeDirection rotator = t==RotationType.FOUR_WAY ? ForgeDirection.DOWN : axis;
   ForgeDirection face = ForgeDirection.getOrientation(meta);
   face = face.getRotation(rotator);
   return face.ordinal();
+  *-/
   }
 
 public static int getMetaForPlacement(EntityLivingBase entity, IRotatableBlock block, int sideHit)
   {
-  return getFaceForPlacement(entity, block, sideHit).ordinal();
+  //return getFaceForPlacement(entity, block, sideHit).ordinal();
+    return 0;
   }
 
 public static ForgeDirection getFaceForPlacement(EntityLivingBase entity, IRotatableBlock block, int sideHit)
@@ -72,17 +76,17 @@ public static enum RotationType
  * Can have 6 textures / inventories.<br>
  * Top, Bottom, Front, Rear, Left, Right<br>
  * Can only face in one of four-directions - N/S/E/W
- */
+ *-/
 FOUR_WAY(EnumSet.of(RelativeSide.TOP, RelativeSide.BOTTOM, RelativeSide.LEFT, RelativeSide.RIGHT, RelativeSide.FRONT, RelativeSide.REAR)),
 /**
  * Can have 3 textures / inventories<br>
  * Top, Bottom, Sides<br>
  * Can face in any orientation - U/D/N/S/E/W
- */
+ *-/
 SIX_WAY(EnumSet.of(RelativeSide.TOP, RelativeSide.BOTTOM, RelativeSide.ANY_SIDE)),
 /**
  * No rotation, can still have relative sides, but FRONT always == NORTH
- */
+ *-/
 NONE(EnumSet.of(RelativeSide.TOP, RelativeSide.BOTTOM, RelativeSide.LEFT, RelativeSide.RIGHT, RelativeSide.FRONT, RelativeSide.REAR));
 private RotationType(EnumSet<RelativeSide> sides){validSides=sides;}
 EnumSet<RelativeSide> validSides;
@@ -254,7 +258,7 @@ private EnumSet<RelativeSide> validSides = EnumSet.of(RelativeSide.NONE);
 /**
  * Block side to Inventory Side
  * inventorySide should only contain validSides
- */
+ *-/
 private HashMap<RelativeSide, RelativeSide> accessMap = new HashMap<RelativeSide, RelativeSide>();
 
 private HashMap<RelativeSide, int[]> slotsByInventorySide = new HashMap<RelativeSide, int[]>();
@@ -281,7 +285,7 @@ public InventorySided(IRotatableTile te, RotationType rType, int inventorySize)
  * Should be called to configure the default access directly after construction of the inventory
  * @param rSide
  * @param iSide
- */
+ *-/
 public void setAccessibleSideDefault(RelativeSide rSide, RelativeSide iSide, int[] indices)
   {
   if(rSide==null || iSide==null || indices==null){throw new IllegalArgumentException("sides or indices may not be null!");}
@@ -560,6 +564,6 @@ public EnumSet<RelativeSide> getValidSides()
 
 
 }
-
-
+*/
 }
+
