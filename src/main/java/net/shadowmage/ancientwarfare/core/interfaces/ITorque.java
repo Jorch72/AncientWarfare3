@@ -1,7 +1,6 @@
 package net.shadowmage.ancientwarfare.core.interfaces;
 
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraftforge.common.util.ForgeDirection;
 
 public final class ITorque
 {
