@@ -1,69 +1,68 @@
-import org.apache.tools.ant.filters.ReplaceTokens
-
-ext.versionFile = file('gradle.properties')
-
 buildscript {
     repositories {
-        mavenCentral()
-        maven {
-            name = "forge"
-            url = "http://files.minecraftforge.net/maven"
-        }
-        maven {
-            name = "sonatype"
-            url = "https://oss.sonatype.org/content/repositories/snapshots/"
-        }
+        jcenter()
+        maven { url = "http://files.minecraftforge.net/maven" }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.2-SNAPSHOT'
     }
 }
+apply plugin: 'net.minecraftforge.gradle.forge'
+//Only edit below this line, the above code adds and enables the nessasary things for Forge to be setup.
 
-allprojects
-{
-  apply plugin: 'forge'
-  minecraft
-  {
-    version = "1.7.10-10.13.2.1236"
-    runDir = "eclipse/assets"
-  }
-  version = project.major +"."+ project.minor +"."+  project.build+"-"+ project.releasetype + "-MC" +minecraft.version
-  group = "shadowmage" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-  archivesBaseName = "ancientwarfare"
+
+version = "1.0"
+group= "com.yourname.modid" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "modid"
+
+sourceCompatibility = targetCompatibility = "1.6" // Need this here so eclipse task generates correctly.
+compileJava {
+    sourceCompatibility = targetCompatibility = "1.6"
+}
+
+minecraft {
+    version = "1.10.2-12.18.3.2281"
+    runDir = "run"
+    
+    // the mappings can be changed at any time, and must be in the following format.
+    // snapshot_YYYYMMDD   snapshot are built nightly.
+    // stable_#            stables are built at the discretion of the MCP team.
+    // Use non-default mappings at your own risk. they may not allways work.
+    // simply re-run your setup task after changing the mappings to update your workspace.
+    mappings = "snapshot_20161111"
+    // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 }
 
 dependencies {
-  compile files {
-    "lib/CodeChickenLib-1.7.10-1.1.1.106-dev.jar"
-  }
-  compile files {
-    "lib/buildcraft-6.1.8-dev.jar" // can remove this, no longer a real dep; can just load as a mod in mods folder
-  }
-  compile files {
-    "lib/CodeChickenCore-1.7.10-1.0.4.29-dev.jar"
-  }
-  compile files {
-    "lib/NotEnoughItems-1.7.10-1.0.3.67-dev.jar"
-  }
-  compile files {
-    "lib/CoFHLib-[1.7.10]1.0.0B7-dev-29.jar"
-  }  
+    // you may put jars on which you depend on in ./libs
+    // or you may define them like so..
+    //compile "some.group:artifact:version:classifier"
+    //compile "some.group:artifact:version"
+      
+    // real examples
+    //compile 'com.mod-buildcraft:buildcraft:6.0.8:dev'  // adds buildcraft to the dev env
+    //compile 'com.googlecode.efficient-java-matrix-library:ejml:0.24' // adds ejml to the dev env
+
+    // the 'provided' configuration is for optional dependencies that exist at compile-time but might not at runtime.
+    //provided 'com.mod-buildcraft:buildcraft:6.0.8:dev'
+
+    // the deobf configurations:  'deobfCompile' and 'deobfProvided' are the same as the normal compile and provided,
+    // except that these dependencies get remapped to your current MCP mappings
+    //deobfCompile 'com.mod-buildcraft:buildcraft:6.0.8:dev'
+    //deobfProvided 'com.mod-buildcraft:buildcraft:6.0.8:dev'
+
+    // for more info...
+    // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
+    // http://www.gradle.org/docs/current/userguide/dependency_management.html
+
 }
 
-task updateVersion(type:Copy){
-  ant.propertyfile(file: versionFile) {
-    entry(key: 'build', type: 'int', operation: '+', value: 001)
-  }
-  from(sourceSets.main.java.srcDirs){
-    exclude 'mcmod.info'
-  }
-  into 'build/sources/java'
-  filter(ReplaceTokens, tokens: [VERSION: project.version])
-}
+processResources
+{
+    // this will ensure that this task is redone when the versions change.
+    inputs.property "version", project.version
+    inputs.property "mcversion", project.minecraft.version
 
-compileJava.dependsOn updateVersion
-
-processResources{
     // replace stuff in mcmod.info, nothing else
     from(sourceSets.main.resources.srcDirs) {
         include 'mcmod.info'
@@ -77,56 +76,3 @@ processResources{
         exclude 'mcmod.info'
     }
 }
-
-task expand_jar<<{
-  copy{    
-    println 'EXPANDING FINALIZED FILES'
-    from zipTree('build/libs/ancientwarfare-'+version+'.jar')
-    into 'build/tmp/expanded'   
-    }
-  }   
-
-task packFullJar(type: Jar){
-  archiveName 'ancientwarfare-'+version+'-FULL.jar'
-  from 'build/tmp/expanded'
-  include '**/*'
-  exclude 'net/shadowmage/ancientwarfare/modeler/**/*'
-}
-
-task packCoreJar(type: Jar){
-  archiveName 'ancientwarfare-'+version+'-CORE.jar'
-  from 'build/tmp/expanded'
-  exclude 'net/shadowmage/ancientwarfare/automation/**/*', 'net/shadowmage/ancientwarfare/modeler/**/*', 'net/shadowmage/ancientwarfare/npc/**/*', 'net/shadowmage/ancientwarfare/structure/**/*', 'net/shadowmage/ancientwarfare/vehicle/**/*'
-}
-
-task packAutomationJar(type: Jar){
-  archiveName 'ancientwarfare-'+version+'-AUTOMATION.jar'
-  from 'build/tmp/expanded'
-  exclude 'net/shadowmage/ancientwarfare/core/**/*', 'net/shadowmage/ancientwarfare/modeler/**/*', 'net/shadowmage/ancientwarfare/npc/**/*', 'net/shadowmage/ancientwarfare/structure/**/*', 'net/shadowmage/ancientwarfare/vehicle/**/*', 'net/shadowmage/ancientwarfare/nei_plugin/**/*'
-}
-
-task packNpcJar(type: Jar){
-  archiveName 'ancientwarfare-'+version+'-NPC.jar'
-  from 'build/tmp/expanded'
-  exclude 'net/shadowmage/ancientwarfare/core/**/*', 'net/shadowmage/ancientwarfare/modeler/**/*', 'net/shadowmage/ancientwarfare/automation/**/*', 'net/shadowmage/ancientwarfare/structure/**/*', 'net/shadowmage/ancientwarfare/vehicle/**/*', 'net/shadowmage/ancientwarfare/nei_plugin/**/*'
-}
-
-task packStructureJar(type: Jar){
-  archiveName 'ancientwarfare-'+version+'-STRUCTURE.jar'
-  from 'build/tmp/expanded'
-  exclude 'net/shadowmage/ancientwarfare/core/**/*', 'net/shadowmage/ancientwarfare/modeler/**/*', 'net/shadowmage/ancientwarfare/npc/**/*', 'net/shadowmage/ancientwarfare/automation/**/*', 'net/shadowmage/ancientwarfare/vehicle/**/*', 'net/shadowmage/ancientwarfare/nei_plugin/**/*'
-}
-
-//hack the entire thing to fire after check()
-check.dependsOn packStructureJar
-
-packFullJar.dependsOn expand_jar
-packCoreJar.dependsOn packFullJar
-packAutomationJar.dependsOn packCoreJar
-packNpcJar.dependsOn packAutomationJar
-packStructureJar.dependsOn packNpcJar
-
-
-
-
-
