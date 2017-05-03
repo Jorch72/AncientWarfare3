@@ -20,16 +20,11 @@
  */
 package shadowmage.ancient_structures.common.world_gen;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Random;
-
 import net.minecraft.block.Block;
 import net.minecraft.util.ChunkCoordinates;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
+import net.minecraftforge.fml.common.IWorldGenerator;
 import shadowmage.ancient_framework.common.config.AWLog;
 import shadowmage.ancient_framework.common.config.Statics;
 import shadowmage.ancient_framework.common.gamedata.AWGameData;
@@ -39,7 +34,8 @@ import shadowmage.ancient_structures.common.manager.WorldGenStructureManager;
 import shadowmage.ancient_structures.common.template.StructureTemplate;
 import shadowmage.ancient_structures.common.template.build.StructureBB;
 import shadowmage.ancient_structures.common.template.build.validation.StructureBuilderWorldGen;
-import net.minecraftforge.fml.common.IWorldGenerator;
+
+import java.util.*;
 
 public class WorldStructureGenerator implements IWorldGenerator
 {

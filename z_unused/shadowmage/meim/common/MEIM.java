@@ -1,15 +1,15 @@
 package shadowmage.meim.common;
 
-import shadowmage.meim.common.config.MEIMConfig;
-import shadowmage.meim.common.item.ItemLoader;
-import shadowmage.meim.common.network.NetworkManager;
-import shadowmage.meim.common.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.network.NetworkMod;
+import shadowmage.meim.common.config.MEIMConfig;
+import shadowmage.meim.common.item.ItemLoader;
+import shadowmage.meim.common.network.NetworkManager;
+import shadowmage.meim.common.proxy.CommonProxy;
 
 
 @Mod( modid = "MEIM", name="MEIM", version=MEIMConfig.VERSION, dependencies="required-after:AncientWarfareCore")

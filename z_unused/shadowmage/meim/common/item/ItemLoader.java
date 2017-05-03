@@ -2,8 +2,8 @@ package shadowmage.meim.common.item;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import shadowmage.meim.common.config.MEIMConfig;
 import net.minecraftforge.fml.common.registry.LanguageRegistry;
+import shadowmage.meim.common.config.MEIMConfig;
 
 public class ItemLoader
 {

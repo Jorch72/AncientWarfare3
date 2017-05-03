@@ -20,11 +20,11 @@
  */
 package shadowmage.ancient_framework.common.utils;
 
-import java.util.EnumSet;
-
-import shadowmage.ancient_framework.common.config.AWConfig;
 import net.minecraftforge.fml.common.ITickHandler;
 import net.minecraftforge.fml.common.TickType;
+import shadowmage.ancient_framework.common.config.AWConfig;
+
+import java.util.EnumSet;
 
 public class ServerPerformanceMonitor implements ITickHandler
 {

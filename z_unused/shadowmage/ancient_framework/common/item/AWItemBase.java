@@ -22,9 +22,6 @@
  */
 package shadowmage.ancient_framework.common.item;
 
-import java.util.HashMap;
-import java.util.List;
-
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
@@ -35,6 +32,9 @@ import net.minecraft.util.StatCollector;
 import net.minecraftforge.common.Configuration;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+
+import java.util.HashMap;
+import java.util.List;
 
 public abstract class AWItemBase extends Item
 {

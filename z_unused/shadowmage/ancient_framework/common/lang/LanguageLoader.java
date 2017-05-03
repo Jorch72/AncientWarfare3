@@ -20,13 +20,13 @@
  */
 package shadowmage.ancient_framework.common.lang;
 
+import net.minecraftforge.fml.common.registry.LanguageRegistry;
+import shadowmage.ancient_framework.AWFramework;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Properties;
-
-import shadowmage.ancient_framework.AWFramework;
-import net.minecraftforge.fml.common.registry.LanguageRegistry;
 
 public class LanguageLoader
 {

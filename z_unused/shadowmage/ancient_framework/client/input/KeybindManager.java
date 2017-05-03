@@ -20,21 +20,19 @@
  */
 package shadowmage.ancient_framework.client.input;
 
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.settings.KeyBinding;
+import net.minecraftforge.fml.client.registry.KeyBindingRegistry.KeyHandler;
+import net.minecraftforge.fml.common.TickType;
+import org.lwjgl.input.Keyboard;
+import org.lwjgl.input.Mouse;
+import shadowmage.ancient_framework.common.config.Statics;
+import shadowmage.ancient_framework.common.network.GUIHandler;
+
 import java.util.ArrayList;
 import java.util.EnumSet;
 import java.util.Iterator;
 import java.util.List;
-
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.settings.KeyBinding;
-
-import org.lwjgl.input.Keyboard;
-import org.lwjgl.input.Mouse;
-
-import shadowmage.ancient_framework.common.config.Statics;
-import shadowmage.ancient_framework.common.network.GUIHandler;
-import net.minecraftforge.fml.client.registry.KeyBindingRegistry.KeyHandler;
-import net.minecraftforge.fml.common.TickType;
 
 public class KeybindManager extends KeyHandler
 {

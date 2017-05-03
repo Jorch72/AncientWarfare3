@@ -20,10 +20,10 @@
  */
 package shadowmage.ancient_framework.client.input;
 
-import java.util.EnumSet;
-
 import net.minecraftforge.fml.common.ITickHandler;
 import net.minecraftforge.fml.common.TickType;
+
+import java.util.EnumSet;
 
 
 public class TickHandlerClientKeyboard implements ITickHandler

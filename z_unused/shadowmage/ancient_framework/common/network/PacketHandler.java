@@ -22,20 +22,18 @@
  */
 package shadowmage.ancient_framework.common.network;
 
-import java.util.HashMap;
-import java.util.Map;
-
+import com.google.common.io.ByteArrayDataInput;
+import com.google.common.io.ByteStreams;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.INetworkManager;
 import net.minecraft.network.packet.Packet250CustomPayload;
-import shadowmage.ancient_framework.common.utils.NBTTools;
-
-import com.google.common.io.ByteArrayDataInput;
-import com.google.common.io.ByteStreams;
-
 import net.minecraftforge.fml.common.network.IPacketHandler;
 import net.minecraftforge.fml.common.network.Player;
+import shadowmage.ancient_framework.common.utils.NBTTools;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class PacketHandler implements IPacketHandler
 {
