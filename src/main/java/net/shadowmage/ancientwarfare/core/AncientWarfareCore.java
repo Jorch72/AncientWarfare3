@@ -138,7 +138,7 @@ public void serverStartingEvent(FMLServerStartingEvent evt)
 @SubscribeEvent
 public void configChangedEvent(OnConfigChangedEvent evt)
   {
-  if(modID.equals(evt.modID))
+  if(modID.equals(evt.getModID()))
     {
     config.save();
     proxy.onConfigChanged();
