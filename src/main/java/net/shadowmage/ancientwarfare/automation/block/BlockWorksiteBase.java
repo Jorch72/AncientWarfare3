@@ -20,8 +20,8 @@ import net.shadowmage.ancientwarfare.core.block.IconRotationMap;
 import net.shadowmage.ancientwarfare.core.interfaces.IInteractableTile;
 import net.shadowmage.ancientwarfare.core.interfaces.IWorkSite;
 import net.shadowmage.ancientwarfare.core.util.InventoryTools;
-import net.minecraftforge.relauncher.Side;
-import net.minecraftforge.relauncher.SideOnly;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public abstract class BlockWorksiteBase extends Block implements IRotatableBlock
 {
@@ -34,7 +34,7 @@ public BlockWorksiteBase(Material p_i45394_1_, String regName)
   {
   super(p_i45394_1_);
   this.setCreativeTab(AWAutomationItemLoader.automationTab);
-  this.setBlockName(regName);
+  this.setUnlocalizedName(regName);
   setHardness(2.f);
   }
 

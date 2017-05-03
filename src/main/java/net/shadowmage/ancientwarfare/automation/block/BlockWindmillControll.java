@@ -15,8 +15,8 @@ public class BlockWindmillControll extends BlockTorqueBase
 
 public BlockWindmillControll(String regName)
   {
-  super(Material.rock);
-  this.setBlockName(regName);
+  super(Material.ROCK);
+  this.setUnlocalizedName(regName);
   this.setCreativeTab(AWAutomationItemLoader.automationTab);
   }
 

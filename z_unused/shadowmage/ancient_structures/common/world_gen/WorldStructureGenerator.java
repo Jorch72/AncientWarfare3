@@ -35,8 +35,6 @@ import shadowmage.ancient_structures.common.template.StructureTemplate;
 import shadowmage.ancient_structures.common.template.build.StructureBB;
 import shadowmage.ancient_structures.common.template.build.validation.StructureBuilderWorldGen;
 
-import java.util.*;
-
 public class WorldStructureGenerator implements IWorldGenerator
 {
 

@@ -20,8 +20,8 @@ private BlockIconMap iconMap = new BlockIconMap();
 
 public BlockStructureBuilder(String regName)
   {
-  super(Material.rock);
-  this.setBlockName(regName);
+  super(Material.ROCK);
+  this.setUnlocalizedName(regName);
   this.setCreativeTab(AWStructuresItemLoader.structureTab);
   setHardness(2.f);
   }

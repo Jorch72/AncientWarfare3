@@ -22,9 +22,9 @@ IIcon transparentIcon;
 
 public BlockAdvancedSpawner(String regName)
   {
-  super(Material.rock);
+  super(Material.ROCK);
   this.setCreativeTab(AWStructuresItemLoader.structureTab);
-  this.setBlockName(regName);
+  this.setUnlocalizedName(regName);
   this.setBlockTextureName("ancientwarfare:structure/advanced_spawner");
   setHardness(2.f);
   }

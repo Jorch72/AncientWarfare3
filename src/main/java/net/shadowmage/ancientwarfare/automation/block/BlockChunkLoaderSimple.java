@@ -11,8 +11,8 @@ import net.shadowmage.ancientwarfare.automation.item.AWAutomationItemLoader;
 import net.shadowmage.ancientwarfare.automation.tile.TileChunkLoaderSimple;
 import net.shadowmage.ancientwarfare.core.block.BlockIconMap;
 import net.shadowmage.ancientwarfare.core.interfaces.IInteractableTile;
-import net.minecraftforge.relauncher.Side;
-import net.minecraftforge.relauncher.SideOnly;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockChunkLoaderSimple extends Block
 {
@@ -21,8 +21,8 @@ BlockIconMap iconMap = new BlockIconMap();
 
 protected BlockChunkLoaderSimple(String regName)
   {
-  super(Material.rock);
-  this.setBlockName(regName);
+  super(Material.ROCK);
+  this.setUnlocalizedName(regName);
   this.setCreativeTab(AWAutomationItemLoader.automationTab);
   setHardness(2.f);
   }

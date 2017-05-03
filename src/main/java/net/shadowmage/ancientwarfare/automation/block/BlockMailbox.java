@@ -18,8 +18,8 @@ import net.shadowmage.ancientwarfare.core.block.BlockRotationHandler.RotationTyp
 import net.shadowmage.ancientwarfare.core.block.IconRotationMap;
 import net.shadowmage.ancientwarfare.core.network.NetworkHandler;
 import net.shadowmage.ancientwarfare.core.util.InventoryTools;
-import net.minecraftforge.relauncher.Side;
-import net.minecraftforge.relauncher.SideOnly;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockMailbox extends Block implements IRotatableBlock
 {
@@ -28,8 +28,8 @@ IconRotationMap iconMap = new IconRotationMap();
 
 public BlockMailbox(String regName)
   {
-  super(Material.rock);
-  this.setBlockName(regName);
+  super(Material.ROCK);
+  this.setUnlocalizedName(regName);
   this.setCreativeTab(AWAutomationItemLoader.automationTab);
   setHardness(2.f);
   }

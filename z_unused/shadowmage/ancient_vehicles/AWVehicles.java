@@ -25,7 +25,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
-import net.minecraftforge.fml.common.event.*;
 import net.minecraftforge.fml.common.network.NetworkMod;
 import shadowmage.ancient_framework.AWFramework;
 import shadowmage.ancient_framework.AWMod;

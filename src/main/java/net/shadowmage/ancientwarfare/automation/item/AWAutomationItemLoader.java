@@ -33,8 +33,8 @@ import net.shadowmage.ancientwarfare.core.api.AWItems;
 import net.shadowmage.ancientwarfare.core.item.ItemComponent;
 import net.shadowmage.ancientwarfare.core.upgrade.WorksiteUpgrade;
 import net.minecraftforge.common.registry.GameRegistry;
-import net.minecraftforge.relauncher.Side;
-import net.minecraftforge.relauncher.SideOnly;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 public class AWAutomationItemLoader
 {
 

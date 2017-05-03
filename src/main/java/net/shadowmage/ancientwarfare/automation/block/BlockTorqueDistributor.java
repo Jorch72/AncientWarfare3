@@ -25,9 +25,9 @@ public class BlockTorqueDistributor extends BlockTorqueBase
 
 protected BlockTorqueDistributor(String regName)
   {
-  super(Material.rock);
+  super(Material.ROCK);
   this.setCreativeTab(AWAutomationItemLoader.automationTab);
-  this.setBlockName(regName);
+  this.setUnlocalizedName(regName);
   }
 
 @Override

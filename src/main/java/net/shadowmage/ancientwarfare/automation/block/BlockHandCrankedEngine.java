@@ -15,9 +15,9 @@ public class BlockHandCrankedEngine extends BlockTorqueBase
 
 protected BlockHandCrankedEngine(String regName)
   {
-  super(Material.rock);
+  super(Material.ROCK);
   this.setCreativeTab(AWAutomationItemLoader.automationTab);
-  this.setBlockName(regName);
+  this.setUnlocalizedName(regName);
   }
 
 @Override

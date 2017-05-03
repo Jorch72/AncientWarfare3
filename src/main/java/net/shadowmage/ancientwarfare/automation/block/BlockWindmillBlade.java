@@ -22,8 +22,8 @@ public class BlockWindmillBlade extends Block
 
 public BlockWindmillBlade(String regName)
   {
-  super(Material.rock);
-  this.setBlockName(regName);
+  super(Material.ROCK);
+  this.setUnlocalizedName(regName);
   this.setCreativeTab(AWAutomationItemLoader.automationTab);
   }
 

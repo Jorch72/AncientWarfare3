@@ -21,7 +21,6 @@
 package shadowmage.ancient_framework;
 
 import net.minecraftforge.fml.common.Mod.EventHandler;
-import net.minecraftforge.fml.common.event.*;
 import shadowmage.ancient_framework.common.config.AWLog;
 import shadowmage.ancient_framework.common.config.ModConfiguration;
 
