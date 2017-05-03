@@ -23,7 +23,7 @@
 package net.shadowmage.ancientwarfare.core.util;
 
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.util.MathHelper;
+import net.minecraft.util.math.MathHelper;
 
 public final class BlockPosition
 {
