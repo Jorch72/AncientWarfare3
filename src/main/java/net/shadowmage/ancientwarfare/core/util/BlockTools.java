@@ -32,10 +32,10 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.AxisAlignedBB;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.MathHelper;
-import net.minecraft.util.MovingObjectPosition;
-import net.minecraft.util.Vec3;
+import net.minecraft.util.math.RayTraceResult;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldServer;
 import net.minecraftforge.common.MinecraftForge;
@@ -147,7 +147,6 @@ public static BlockPosition getBlockClickedOn(EntityPlayer player, World world, 
   double testX = player.prevPosX + (player.posX - player.prevPosX) * scaleFactor;
   double testY = player.prevPosY + (player.posY - player.prevPosY) * scaleFactor + 1.62D - player.yOffset;
   double testZ = player.prevPosZ + (player.posZ - player.prevPosZ) * scaleFactor;
-  Vec3 testVector = Vec3.createVectorHelper(testX, testY, testZ);
   float var14 = MathHelper.cos(-rotYaw * 0.017453292F - (float)Math.PI);
   float var15 = MathHelper.sin(-rotYaw * 0.017453292F - (float)Math.PI);
   float var16 = -MathHelper.cos(-rotPitch * 0.017453292F);
@@ -155,8 +154,9 @@ public static BlockPosition getBlockClickedOn(EntityPlayer player, World world, 
   float vectorX = var15 * var16;
   float vectorZ = var14 * var16;
   double reachLength = 5.0D;
-  Vec3 testVectorFar = testVector.addVector(vectorX * reachLength, vectorY * reachLength, vectorZ * reachLength);
-  MovingObjectPosition testHitPosition = world.rayTraceBlocks(testVector, testVectorFar, true);
+  Vec3d.fromPitchYawVector(vectorX * reachLength, vectorY * reachLength, vectorZ * reachLength);
+  Vec3d testVectorFar = Vec3d.fromPitchYaw(vectorX * reachLength, vectorY * reachLength, vectorZ * reachLength);
+  RayTraceResult testHitPosition = world.rayTraceBlocks(testVector, testVectorFar, true);
 
   /**
    * if nothing was hit, return null
@@ -166,7 +166,7 @@ public static BlockPosition getBlockClickedOn(EntityPlayer player, World world, 
     return null;
     }
 
-  Vec3 var25 = player.getLook(scaleFactor);
+  Vec3d var25 = player.getLook(scaleFactor);
   float var27 = 1.0F;
   List entitiesPossiblyHitByVector = world.getEntitiesWithinAABBExcludingEntity(player, player.boundingBox.addCoord(var25.xCoord * reachLength, var25.yCoord * reachLength, var25.zCoord * reachLength).expand(var27, var27, var27));
   Iterator entityIterator = entitiesPossiblyHitByVector.iterator();
