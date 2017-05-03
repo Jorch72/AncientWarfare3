@@ -18,7 +18,7 @@ public ContainerBackpack(EntityPlayer player, int x, int y, int z)
   {
   super(player, x, y, z);
   
-  ItemStack stack = player.getCurrentEquippedItem();
+  ItemStack stack = player.getHeldItemMainhand();
   backpackSlotIndex = player.inventory.currentItem;
   
   inventory = ItemBackpack.getInventoryFor(stack);
@@ -39,7 +39,7 @@ public void onContainerClosed(EntityPlayer par1EntityPlayer)
   super.onContainerClosed(par1EntityPlayer);
   if(!par1EntityPlayer.worldObj.isRemote)
     {
-    ItemBackpack.writeBackpackToItem(inventory, par1EntityPlayer.getCurrentEquippedItem());
+    ItemBackpack.writeBackpackToItem(inventory, par1EntityPlayer.getHeldItemMainhand());
     }
   }
 

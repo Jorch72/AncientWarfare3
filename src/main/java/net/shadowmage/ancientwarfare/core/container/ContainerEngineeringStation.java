@@ -1,10 +1,11 @@
 package net.shadowmage.ancientwarfare.core.container;
 
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.inventory.IInventory;
+import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.inventory.Slot;
 import net.minecraft.inventory.SlotCrafting;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.math.BlockPos;
 import net.shadowmage.ancientwarfare.core.api.AWItems;
 import net.shadowmage.ancientwarfare.core.item.ItemResearchBook;
 import net.shadowmage.ancientwarfare.core.tile.TileEngineeringStation;
@@ -17,13 +18,14 @@ public TileEngineeringStation station;
 public ContainerEngineeringStation(EntityPlayer player, int x, int y, int z)
   {
   super(player, x, y, z);
-  TileEngineeringStation t = (TileEngineeringStation) player.worldObj.getTileEntity(x, y, z);
+    BlockPos bpos = new BlockPos(x,y,z);
+  TileEngineeringStation t = (TileEngineeringStation) player.worldObj.getTileEntity(bpos);
   station = t;
   if(t==null)
     {
     throw new IllegalArgumentException(" tile may not be null!!");
     }
-  IInventory inventory = t.layoutMatrix;
+  InventoryCrafting inventory = t.layoutMatrix;
   
   Slot slot;
   

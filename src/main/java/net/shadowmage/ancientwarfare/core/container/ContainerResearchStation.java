@@ -7,6 +7,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.util.math.BlockPos;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.shadowmage.ancientwarfare.core.api.AWItems;
 import net.shadowmage.ancientwarfare.core.config.AWCoreStatics;
@@ -27,7 +28,8 @@ public List<Integer> queuedResearch = new ArrayList<Integer>();
 public ContainerResearchStation(EntityPlayer player, int x, int y, int z)
   {
   super(player, x, y, z);
-  tile = (TileResearchStation) player.worldObj.getTileEntity(x, y, z);
+    BlockPos bpos = new BlockPos(x,y,z);
+  tile = (TileResearchStation) player.worldObj.getTileEntity(bpos);
   if(!player.worldObj.isRemote)
     {
     researcherName = tile.getCrafterName();
