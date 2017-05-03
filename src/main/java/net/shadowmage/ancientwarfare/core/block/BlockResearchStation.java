@@ -23,8 +23,8 @@ BlockIconMap iconMap = new BlockIconMap();
 
 public BlockResearchStation(String regName)
   {
-  super(Material.rock);
-  this.setBlockName(regName);
+  super(Material.ROCK);
+  this.setUnlocalizedName(regName);
   this.setCreativeTab(AWCoreBlockLoader.coreTab);
   iconMap.setIconTexture(0, 0, "ancientwarfare:core/research_station_bottom");
   iconMap.setIconTexture(1, 0, "ancientwarfare:core/research_station_top");

@@ -23,13 +23,13 @@ package shadowmage.ancient_framework.common.teams;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.common.IPlayerTracker;
 import shadowmage.ancient_framework.AWFramework;
 import shadowmage.ancient_framework.common.config.AWLog;
 import shadowmage.ancient_framework.common.container.ContainerBase;
 import shadowmage.ancient_framework.common.container.ContainerTeamControl;
 import shadowmage.ancient_framework.common.gamedata.AWGameData;
 import shadowmage.ancient_framework.common.network.Packet05Team;
-import net.minecraftforge.fml.common.IPlayerTracker;
 
 public class TeamTracker implements IPlayerTracker
 {

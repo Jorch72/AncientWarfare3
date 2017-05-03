@@ -12,8 +12,8 @@ import net.shadowmage.ancientwarfare.automation.tile.warehouse2.TileWarehouseCra
 import net.shadowmage.ancientwarfare.core.block.BlockIconMap;
 import net.shadowmage.ancientwarfare.core.interfaces.IInteractableTile;
 import net.shadowmage.ancientwarfare.core.util.InventoryTools;
-import net.minecraftforge.relauncher.Side;
-import net.minecraftforge.relauncher.SideOnly;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockWarehouseCraftingStation extends Block
 {
@@ -22,8 +22,8 @@ private BlockIconMap iconMap = new BlockIconMap();
 
 public BlockWarehouseCraftingStation(String regName)
   {
-  super(Material.rock);
-  this.setBlockName(regName);
+  super(Material.ROCK);
+  this.setUnlocalizedName(regName);
   setCreativeTab(AWAutomationItemLoader.automationTab);
   setHardness(2.f);
   }

@@ -20,6 +20,9 @@
  */
 package shadowmage.ancient_framework.client.proxy;
 
+import net.minecraftforge.fml.client.registry.KeyBindingRegistry;
+import net.minecraftforge.fml.common.registry.TickRegistry;
+import net.minecraftforge.fml.relauncher.Side;
 import shadowmage.ancient_framework.client.gui.options.GuiOptions;
 import shadowmage.ancient_framework.client.gui.teams.GuiTeamControl;
 import shadowmage.ancient_framework.client.input.KeybindManager;
@@ -27,9 +30,6 @@ import shadowmage.ancient_framework.client.input.TickHandlerClientKeyboard;
 import shadowmage.ancient_framework.common.config.AWLog;
 import shadowmage.ancient_framework.common.config.Statics;
 import shadowmage.ancient_framework.common.network.GUIHandler;
-import net.minecraftforge.fml.client.registry.KeyBindingRegistry;
-import net.minecraftforge.fml.common.registry.TickRegistry;
-import net.minecraftforge.fml.relauncher.Side;
 
 public class ClientProxyCore extends ClientProxyBase
 {

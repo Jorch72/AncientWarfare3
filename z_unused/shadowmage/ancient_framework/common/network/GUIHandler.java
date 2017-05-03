@@ -20,18 +20,18 @@
  */
 package shadowmage.ancient_framework.common.network;
 
-import java.util.HashMap;
-import java.util.List;
-
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.common.network.FMLNetworkHandler;
+import net.minecraftforge.fml.common.network.IGuiHandler;
 import shadowmage.ancient_framework.AWFramework;
 import shadowmage.ancient_framework.client.gui.GuiContainerAdvanced;
 import shadowmage.ancient_framework.common.config.AWLog;
 import shadowmage.ancient_framework.common.container.ContainerBase;
-import net.minecraftforge.fml.common.network.FMLNetworkHandler;
-import net.minecraftforge.fml.common.network.IGuiHandler;
+
+import java.util.HashMap;
+import java.util.List;
 
 public class GUIHandler implements IGuiHandler
 {

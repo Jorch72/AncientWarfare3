@@ -51,7 +51,7 @@ import net.minecraftforge.common.registry.GameRegistry;
 public class AWAutomationBlockLoader
 {
 
-public static final BlockWorksiteBase worksiteQuarry = new BlockWorksiteBase(Material.rock, "civic_quarry")
+public static final BlockWorksiteBase worksiteQuarry = new BlockWorksiteBase(Material.ROCK, "civic_quarry")
   {
   public TileEntity createTileEntity(World world, int metadata) 
     {
@@ -59,7 +59,7 @@ public static final BlockWorksiteBase worksiteQuarry = new BlockWorksiteBase(Mat
     };
   };
 
-public static final BlockWorksiteBase worksiteForestry = new BlockWorksiteBase(Material.rock, "civic_forestry")
+public static final BlockWorksiteBase worksiteForestry = new BlockWorksiteBase(Material.ROCK, "civic_forestry")
   {
   public TileEntity createTileEntity(World world, int metadata) 
     {
@@ -67,7 +67,7 @@ public static final BlockWorksiteBase worksiteForestry = new BlockWorksiteBase(M
     };
   };
   
-public static final BlockWorksiteBase worksiteCropFarm = new BlockWorksiteBase(Material.rock, "civic_crop_farm")
+public static final BlockWorksiteBase worksiteCropFarm = new BlockWorksiteBase(Material.ROCK, "civic_crop_farm")
     {
     public TileEntity createTileEntity(World world, int metadata) 
       {
@@ -75,7 +75,7 @@ public static final BlockWorksiteBase worksiteCropFarm = new BlockWorksiteBase(M
       };
     };
     
-public static final BlockWorksiteBase worksiteMushroomFarm = new BlockWorksiteBase(Material.rock, "civic_mushroom_farm")
+public static final BlockWorksiteBase worksiteMushroomFarm = new BlockWorksiteBase(Material.ROCK, "civic_mushroom_farm")
   {
   public TileEntity createTileEntity(World world, int metadata) 
     {
@@ -83,7 +83,7 @@ public static final BlockWorksiteBase worksiteMushroomFarm = new BlockWorksiteBa
     };
   };  
   
-public static final BlockWorksiteBase worksiteAnimalFarm = new BlockWorksiteBase(Material.rock, "civic_animal_farm")
+public static final BlockWorksiteBase worksiteAnimalFarm = new BlockWorksiteBase(Material.ROCK, "civic_animal_farm")
   {
   @Override
   public TileEntity createTileEntity(World world, int metadata)
@@ -92,7 +92,7 @@ public static final BlockWorksiteBase worksiteAnimalFarm = new BlockWorksiteBase
     }  
   };
     
-public static final BlockWorksiteBase worksiteFishFarm = new BlockWorksiteBase(Material.rock, "civic_fish_farm")
+public static final BlockWorksiteBase worksiteFishFarm = new BlockWorksiteBase(Material.ROCK, "civic_fish_farm")
   {
   @Override
   public TileEntity createTileEntity(World world, int metadata)
@@ -101,7 +101,7 @@ public static final BlockWorksiteBase worksiteFishFarm = new BlockWorksiteBase(M
     }  
   };
   
-public static final BlockWorksiteBase worksiteReedFarm = new BlockWorksiteBase(Material.rock, "civic_reed_farm")
+public static final BlockWorksiteBase worksiteReedFarm = new BlockWorksiteBase(Material.ROCK, "civic_reed_farm")
   {
   @Override
   public TileEntity createTileEntity(World world, int metadata)
@@ -110,9 +110,9 @@ public static final BlockWorksiteBase worksiteReedFarm = new BlockWorksiteBase(M
     }
   };
   
-public static final BlockAutoCrafting worksiteAutoCrafting = new BlockAutoCrafting(Material.rock, "civic_auto_crafting");
+public static final BlockAutoCrafting worksiteAutoCrafting = new BlockAutoCrafting(Material.ROCK, "civic_auto_crafting");
     
-public static final BlockWorksiteBase worksiteWarehouse = new BlockWorksiteBase(Material.rock, "civic_warehouse")
+public static final BlockWorksiteBase worksiteWarehouse = new BlockWorksiteBase(Material.ROCK, "civic_warehouse")
   {    
   @Override
   public TileEntity createTileEntity(World world, int metadata)

@@ -24,9 +24,9 @@ public class BlockFlywheel extends BlockTorqueBase
 
 public BlockFlywheel(String regName)
   {
-  super(Material.rock);
+  super(Material.ROCK);
   this.setCreativeTab(AWAutomationItemLoader.automationTab);
-  this.setBlockName(regName);
+  this.setUnlocalizedName(regName);
   }
 
 @Override

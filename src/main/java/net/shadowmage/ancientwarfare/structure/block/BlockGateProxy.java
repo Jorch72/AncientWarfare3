@@ -43,8 +43,8 @@ public class BlockGateProxy extends Block
  */
 public BlockGateProxy(String regName)
   {
-  super(Material.rock);
-  this.setBlockName(regName);
+  super(Material.ROCK);
+  this.setUnlocalizedName(regName);
   this.setBlockTextureName("ancientwarfare:structure/gate_proxy");
   this.setCreativeTab(null);
   this.setResistance(2000.f);

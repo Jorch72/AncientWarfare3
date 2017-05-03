@@ -10,7 +10,7 @@ public class BlockOreProcessor extends BlockWorksiteBase
 
 public BlockOreProcessor(String regName)
   {
-  super(Material.rock, regName);
+  super(Material.ROCK, regName);
   }
 
 @Override

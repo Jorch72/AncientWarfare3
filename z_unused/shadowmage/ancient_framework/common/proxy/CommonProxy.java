@@ -22,16 +22,16 @@
  */
 package shadowmage.ancient_framework.common.proxy;
 
-import java.util.Arrays;
-
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.network.packet.Packet250CustomPayload;
 import net.minecraft.world.WorldServer;
-import shadowmage.ancient_framework.common.network.Packet00MultiPart;
-import shadowmage.ancient_framework.common.network.PacketBase;
 import net.minecraftforge.fml.common.network.PacketDispatcher;
 import net.minecraftforge.fml.common.network.Player;
+import shadowmage.ancient_framework.common.network.Packet00MultiPart;
+import shadowmage.ancient_framework.common.network.PacketBase;
+
+import java.util.Arrays;
 
 public class CommonProxy
 {

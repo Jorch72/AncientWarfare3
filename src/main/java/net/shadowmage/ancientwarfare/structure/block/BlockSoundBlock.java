@@ -14,8 +14,8 @@ public class BlockSoundBlock extends Block
 
 public BlockSoundBlock(String regName)
   {
-  super(Material.rock);
-  this.setBlockName(regName);
+  super(Material.ROCK);
+  this.setUnlocalizedName(regName);
   this.setCreativeTab(AWStructuresItemLoader.structureTab);
   }
 

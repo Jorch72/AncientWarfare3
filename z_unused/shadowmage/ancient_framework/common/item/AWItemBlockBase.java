@@ -20,8 +20,6 @@
  */
 package shadowmage.ancient_framework.common.item;
 
-import java.util.List;
-
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
@@ -29,9 +27,11 @@ import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Icon;
 import net.minecraft.util.StatCollector;
-import shadowmage.ancient_framework.common.registry.entry.Description;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import shadowmage.ancient_framework.common.registry.entry.Description;
+
+import java.util.List;
 
 public class AWItemBlockBase extends ItemBlock
 {

@@ -24,9 +24,9 @@ public class BlockTorqueTransportConduit extends BlockTorqueBase
 
 protected BlockTorqueTransportConduit(String regName)
   {
-  super(Material.rock);
+  super(Material.ROCK);
   this.setCreativeTab(AWAutomationItemLoader.automationTab);
-  this.setBlockName(regName);
+  this.setUnlocalizedName(regName);
   this.setLightOpacity(1);  
   }
 

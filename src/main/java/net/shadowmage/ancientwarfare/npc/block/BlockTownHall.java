@@ -23,8 +23,8 @@ IconRotationMap iconMap = new IconRotationMap();
 
 public BlockTownHall(String regName)
   {
-  super(Material.rock);
-  this.setBlockName(regName);
+  super(Material.ROCK);
+  this.setUnlocalizedName(regName);
   this.setCreativeTab(AWNpcItemLoader.npcTab);
   setHardness(2.f);
   }

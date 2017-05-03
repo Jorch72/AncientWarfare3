@@ -20,10 +20,16 @@
  */
 package shadowmage.ancient_framework;
 
-import java.io.File;
-import java.util.logging.Logger;
-
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.Mod.Instance;
+import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.network.NetworkMod;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.common.registry.TickRegistry;
+import net.minecraftforge.fml.relauncher.Side;
 import shadowmage.ancient_framework.common.config.AWConfig;
 import shadowmage.ancient_framework.common.config.AWLog;
 import shadowmage.ancient_framework.common.config.Statics;
@@ -37,23 +43,9 @@ import shadowmage.ancient_framework.common.proxy.CommonProxy;
 import shadowmage.ancient_framework.common.teams.TeamData;
 import shadowmage.ancient_framework.common.teams.TeamTracker;
 import shadowmage.ancient_framework.common.utils.ServerPerformanceMonitor;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.Mod.EventHandler;
-import net.minecraftforge.fml.common.Mod.Instance;
-import net.minecraftforge.fml.common.SidedProxy;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLServerAboutToStartEvent;
-import net.minecraftforge.fml.common.event.FMLServerStartedEvent;
-import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
-import net.minecraftforge.fml.common.event.FMLServerStoppedEvent;
-import net.minecraftforge.fml.common.event.FMLServerStoppingEvent;
-import net.minecraftforge.fml.common.network.NetworkMod;
-import net.minecraftforge.fml.common.network.NetworkRegistry;
-import net.minecraftforge.fml.common.registry.GameRegistry;
-import net.minecraftforge.fml.common.registry.TickRegistry;
-import net.minecraftforge.fml.relauncher.Side;
+
+import java.io.File;
+import java.util.logging.Logger;
 
 
 

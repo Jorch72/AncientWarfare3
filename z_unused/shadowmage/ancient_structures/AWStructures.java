@@ -20,10 +20,14 @@
  */
 package shadowmage.ancient_structures;
 
-import java.io.File;
-import java.util.logging.Logger;
-
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraftforge.fml.common.IPlayerTracker;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.Mod.Instance;
+import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.network.NetworkMod;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import shadowmage.ancient_framework.AWFramework;
 import shadowmage.ancient_framework.AWMod;
 import shadowmage.ancient_framework.common.config.AWLog;
@@ -45,21 +49,9 @@ import shadowmage.ancient_structures.common.template.load.TemplateLoader;
 import shadowmage.ancient_structures.common.template.plugin.StructurePluginManager;
 import shadowmage.ancient_structures.common.world_gen.StructureMap;
 import shadowmage.ancient_structures.common.world_gen.WorldStructureGenerator;
-import net.minecraftforge.fml.common.IPlayerTracker;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.Mod.EventHandler;
-import net.minecraftforge.fml.common.Mod.Instance;
-import net.minecraftforge.fml.common.SidedProxy;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLServerAboutToStartEvent;
-import net.minecraftforge.fml.common.event.FMLServerStartedEvent;
-import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
-import net.minecraftforge.fml.common.event.FMLServerStoppedEvent;
-import net.minecraftforge.fml.common.event.FMLServerStoppingEvent;
-import net.minecraftforge.fml.common.network.NetworkMod;
-import net.minecraftforge.fml.common.registry.GameRegistry;
+
+import java.io.File;
+import java.util.logging.Logger;
 
 
 @Mod( modid = "AncientStructures", name="Ancient Structures", version=Statics.VERSION, dependencies="required-after:AncientWarfareCore")

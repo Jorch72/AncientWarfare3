@@ -20,13 +20,11 @@
  */
 package shadowmage.ancient_vehicles.common.ammo;
 
+import com.google.common.io.ByteArrayDataInput;
+import com.google.common.io.ByteArrayDataOutput;
 import net.minecraft.entity.Entity;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.World;
-
-import com.google.common.io.ByteArrayDataInput;
-import com.google.common.io.ByteArrayDataOutput;
-
 import net.minecraftforge.fml.common.registry.IEntityAdditionalSpawnData;
 
 public class EntityAmmo extends Entity implements IEntityAdditionalSpawnData

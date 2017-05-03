@@ -20,15 +20,13 @@
  */
 package shadowmage.ancient_vehicles.common.vehicle;
 
-import shadowmage.ancient_framework.common.interfaces.IEntityPacketHandler;
+import com.google.common.io.ByteArrayDataInput;
+import com.google.common.io.ByteArrayDataOutput;
 import net.minecraft.entity.Entity;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.World;
-
-import com.google.common.io.ByteArrayDataInput;
-import com.google.common.io.ByteArrayDataOutput;
-
 import net.minecraftforge.fml.common.registry.IEntityAdditionalSpawnData;
+import shadowmage.ancient_framework.common.interfaces.IEntityPacketHandler;
 
 public class EntityVehicle extends Entity implements IEntityAdditionalSpawnData, IEntityPacketHandler
 {

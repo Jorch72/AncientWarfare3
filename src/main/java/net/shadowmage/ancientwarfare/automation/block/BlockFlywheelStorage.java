@@ -20,8 +20,8 @@ public class BlockFlywheelStorage extends Block
 
 public BlockFlywheelStorage(String regName)
   {
-  super(Material.rock);
-  this.setBlockName(regName);
+  super(Material.ROCK);
+  this.setUnlocalizedName(regName);
   this.setCreativeTab(AWAutomationItemLoader.automationTab);
   }
 
